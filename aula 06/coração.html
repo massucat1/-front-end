@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coração</title>
+    <style>
+         body{
+            display: flex;/*usa flexbox para centralizar conteúdos*/
+            justify-content: center;/*centralizar horizontalmente*/
+            align-items: center;/*centralizar verticalmente*/
+            min-height: 100vh;/*altura mínima da página é 100% da viewport*/;
+         }
+        .coração{
+            margin: 200px;
+            background-color: red;
+            height: 200px;
+            transform: rotate(-50deg);
+            width: 200px;
+            position: relative;
+            animation: pulse .0s infinite;
+        }
+        .coração:before,
+        .coração:after {
+          content: "";
+          background-color: red;
+          border-radius: 50%;
+          height: 200px;
+          position: absolute;
+          width: 200px;
+          animation: pulse .0s infinite;
+         }
+         .coração:before{
+            top: -100px;
+            left: 0px;
+         }
+         .coração:after{
+            left: 100px;
+            top: 0px;
+         }
+         .coraçãomenor{
+
+            animation: pulse .1s infinite;
+         }
+             @keyframes pulse {
+            0%{
+                transform: scale(1);
+
+            }
+            50%{
+                transform: scale(1.1);
+
+            }
+            100%{
+                transform: scale(1);
+
+            }
+           
+        
+         
+    </style>
+</head>
+<body>
+    <div class="coração">
+       
+    </div>
+
+    <div class="coraçãomenor">
+        <img src="https://media.istockphoto.com/id/607296466/pt/foto/health-insurance-or-love-concept-on-white-background.jpg?s=612x612&w=0&k=20&c=yrONLob7nw0KEuIusW3OUkIcMSG3X_f7WyQM4WsuQUw=" alt="">
+     </div>
+    
+</body>
+</html>

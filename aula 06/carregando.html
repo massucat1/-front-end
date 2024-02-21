@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carregando</title>
+    <style>
+        body{
+            display: flex;/*usa flexbox para centralizar conteúdos*/
+            justify-content: center;/*centralizar horizontalmente*/
+            align-items: center;/*centralizar verticalmente*/
+            min-height: 100vh;/*altura mínima da página é 100% da viewport*/;
+         }
+        .carregando{
+            border: 26px solid lightcoral;
+            width:400px ;
+            height:400px ;
+            border-top: 26px solid#ADFF2F;
+            border-radius:50% ;
+            animation: carregando 1s linear infinite;
+        }
+        @keyframes carregando{
+            from{transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <p><H1>TCHAU PAI DOS BURROS</H1></p>
+    <div class="carregando"></div>
+    <div class="lula">
+        <img src="https://static.poder360.com.br/2023/07/Lula-LuizInacioLulaDaSilva-PPA-WellingtonDias-Paulo-Teixeira-Sanciona-CozinhaSolidaria-23-848x477.jpg" alt="">
+     </div>
+</body>
+</html>
