@@ -1,66 +1,43 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carro</title>
-
-        <style>
-            body{
-                display: flex;/*usa flexbox para centralizar conteúdos*/
-                justify-content: center;/*centralizar horizontalmente*/
-                align-items: center;/*centralizar verticalmente*/
-                min-height: 100vh;/*altura mínima da página é 100% da viewport*/;
-                background-color:blue ;
-            }
-
-            .carro{
-                position: relative;
-                animation: movercarro 3s linear infinite;
-            }
-            .corpo{
-                width: 300px;
-                height: 100px;
-                background-color: rgb(35, 156, 41);
-                border-radius: 20px 600px 30px 20px;
-            }
-            .roda{
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                background-color: black;
-                border-radius: 40%;
-           
-            }
-            #roda1{
-                left: 20%;
-            
-            }
-            #roda2{
-                left: 60%;
-            }
-
-            @keyframes spin {
-            0% { transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-            }
-            @keyframes movercarro {/*iniciar a definição de uma animação chamada movercarro*/
-            0%{/*inicio da animação*/
-                transform: translateX(0);/*inicia movimentação horizontal*/}
-            100%{
-                transform: translateX(100vw);/*move o carro para a direita*/
-            }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro Andando</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
         }
-        </style>
-    </head>
-    <body>
-        <div class="carro">
-            <div class="corpo"></div>
-            <div class="roda"id ="roda1"></div>
-            <div class="roda" id="roda2"></div>
-        </div>
-    </body>
-    </html>
+        .carro {
+            width: 150px;
+            height: 80px;
+            background-color: #333;
+            position: relative;
+            animation: moverCarro 4s linear infinite;
+        }
+        .roda {
+            width: 40px;
+            height: 40px;
+            background-color: #aaa;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            animation: girarRoda 0.5s linear infinite;
+        }
+        .roda.esquerda {
+            left: 20px;
+        }
+        .roda.direita {
+            right: 20px;
+        }
+        @keyframes moverCarro {
+            0% { left: -200px; }
+            100% { left: calc(100% + 200px); }
+        }
+        @k

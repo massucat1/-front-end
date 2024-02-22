@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração 2</title>
+    <style>
+        body{
+            display: flex;/*usa flexbox para centralizar conteúdos*/
+            justify-content: center;/*centralizar horizontalmente*/
+            align-items: center;/*centralizar verticalmente*/
+            min-height: 100vh;/*altura mínima da página é 100% da viewport*/;
+         }
+         .Coração{
+            position: absolute;
+            animation: pulse .3s infinite;
+         }
+           
+
+         @keyframes pulse {
+            0%{
+                transform: scale(1);
+
+            }
+            50%{
+                transform: scale(1.1);
+
+            }
+            100%{
+                transform: scale(1);
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="Coração">
+        <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/coracao.jpg" alt=""></div>
+    
+</body>
+</html>
