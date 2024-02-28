@@ -1,4 +1,5 @@
-*{
+*
+{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
@@ -43,3 +44,5 @@ form button{
     font-size: 18px;
     height: 50px;
 }
+
+
