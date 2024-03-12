@@ -45,15 +45,16 @@ p{
 button{
     border: none;
     padding: 10px 20px;
-    background:#fff;
-    color: #1add45;
-    margin-bottom:50px;
-    box-shadow:0 3px 20px rgb(9, 231, 57)
+    border-radius: 50px;
+    background: #fff;
+    color: #333;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px black;
    
    
 }
 
 button:hover{
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(26, 224, 142);
 }
